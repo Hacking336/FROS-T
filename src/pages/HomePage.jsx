@@ -3,6 +3,7 @@ import Layout, { FeatureBar } from '../components/Layout.jsx'
 import { ProductCard, BrandMark } from '../components/ProductCard.jsx'
 import { ArrowIcon, SnowIcon } from '../components/Icons.jsx'
 import { brands, products, services } from '../data/site.js'
+import { asset } from '../lib/asset.js'
 
 const featured = ['midea-airstill-split', 'lg-dual-inverter-split', 'carrier-optima-inverter']
 
@@ -45,11 +46,11 @@ export default function HomePage() {
 
         <div className="hero__art">
           <div className="hero__frame">
-            <img src="/images/hero-split.jpg" alt="Wall-mounted split air conditioner cooling a room" />
+            <img src={asset('/images/hero-split.jpg')} alt="Wall-mounted split air conditioner cooling a room" />
             <div className="hero__air" aria-hidden="true" />
           </div>
           <div className="hero__palm">
-            <img src="/images/palm.jpg" alt="" aria-hidden="true" />
+            <img src={asset('/images/palm.jpg')} alt="" aria-hidden="true" />
           </div>
           <div className="hero__badge">
             <span className="hero__badge-num">18&ndash;24&deg;C</span>

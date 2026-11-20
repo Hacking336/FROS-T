@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Layout from '../components/Layout.jsx'
 import { ArrowIcon } from '../components/Icons.jsx'
+import { asset } from '../lib/asset.js'
 
 export default function AboutPage() {
   return (
@@ -22,7 +23,7 @@ export default function AboutPage() {
             </Link>
           </div>
           <figure className="about-card__media">
-            <img src="/images/hero-split.jpg" alt="Split air conditioner installed in a bright room" />
+            <img src={asset('/images/hero-split.jpg')} alt="Split air conditioner installed in a bright room" />
           </figure>
         </div>
 
