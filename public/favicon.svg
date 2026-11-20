@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fros't Airconditioning Trading">
+  <rect width="64" height="64" rx="14" fill="#0b2c63" />
+  <g stroke="#8fd4ff" stroke-width="4" stroke-linecap="round">
+    <path d="M32 12v40M14.8 22l34.4 20M49.2 22 14.8 42" />
+    <path d="M32 12l-5 6M32 12l5 6M32 52l-5-6M32 52l5-6" />
+  </g>
+</svg>

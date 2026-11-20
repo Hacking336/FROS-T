@@ -1,0 +1,20 @@
+# Render blueprint for the Java contact backend.
+# Deploy: Render Dashboard -> New -> Blueprint -> this repository.
+services:
+  - type: web
+    name: frost-contact-api
+    runtime: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://fros-t-airconditioning-trading-tu1g6t.freebuff.site
+      - key: CONTACT_TO_EMAIL
+        value: leandroparagas1987.2015@gmail.com
+      - key: CONTACT_FROM_EMAIL
+        value: "FROS'T Website <onboarding@resend.dev>"
+      # Set in the Render dashboard (Environment -> Add Environment Variable).
+      - key: RESEND_API_KEY
+        sync: false
